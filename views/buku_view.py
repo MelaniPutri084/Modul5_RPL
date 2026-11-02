@@ -42,7 +42,7 @@ class BukuView(ctk.CTk):
         self.frame_kanan = ctk.CTkFrame(self)
         self.frame_kanan.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
 
-        ctk.CTkLabel(self.frame_kanan, text="Daftar Koleksi Buku 084", font=("Arial", 16, "bold")).pack(pady=15)
+        ctk.CTkLabel(self.frame_kanan, text="Daftar Koleksi Buku", font=("Arial", 16, "bold")).pack(pady=15)
 
         # Komponen Tabel
         kolom = ("id", "judul", "penulis", "tahun")

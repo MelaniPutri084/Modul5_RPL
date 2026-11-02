@@ -10,7 +10,7 @@ class BukuController:
         self.view.title(f"Sistem Manajemen Perpustakaan - Mode: {self.user_role.upper()}")
         self.view.btn_simpan.configure(command=self.simpan_data)
 
-        if self.user_role != "admin":
+        if self.user_role == "anggota":
             self.view.btn_simpan.configure(state="disabled", text="Akses Terkunci (Khusus Admin)")
             self.view.entry_judul.configure(state="disabled")
             self.view.entry_penulis.configure(state="disabled")
